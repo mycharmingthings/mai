@@ -37,6 +37,48 @@
     }, function () {  
         startRollOne=setInterval(lunbotu,3000);  
     });
+    
+
+    //第三部分，商品当鼠标滑过时，出现遮挡层。
+    // $('.layout .gds-img').on('mouseenter',function(){
+    //     let iIndex = $(this).index();
+    //     $('.mia-icon2').css({display:'block'});
+    // })
+    // $('.layout .gds-img').on('mouseleave',function(){
+    //     $('.mia-icon2').css({display:'none'});
+    // })
+   
+
+
+    // let iIndex = $(this).index();
+    //  $('layouta .gds-img').bind('mouseenter',function(){
+        
+    //       console.log(iIndex)
+    //       $('.mia-icon2').css({display:'block'});
+    //   })
+    //   $('.layouta .gds-img').bind('mouseleave',function(){
+    //       $('.mia-icon2').css({display:'none'});
+    //   })
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   })
 })(jQuery);
 
