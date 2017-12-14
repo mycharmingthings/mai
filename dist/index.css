@@ -13,6 +13,7 @@ ul, li {
   list-style: none; }
 
 img {
+  border: none;
   vertical-align: bottom; }
 
 .header {
@@ -226,6 +227,7 @@ img {
           .header .header-nav .nav .clearfix li:hover {
             background-color: #f92c83; }
           .header .header-nav .nav .clearfix li a {
+            position: relative;
             width: 130px;
             height: 45px;
             line-height: 45px;
@@ -233,6 +235,13 @@ img {
             font-size: 16px;
             padding: 14px 30px;
             text-align: center; }
+            .header .header-nav .nav .clearfix li a:hover img {
+              transform: rotate(180deg);
+              transition: all 0.5s; }
+            .header .header-nav .nav .clearfix li a img {
+              position: absolute;
+              top: 17px;
+              right: 5px; }
       .header .header-nav .nav .choice {
         display: none;
         position: absolute;
@@ -262,47 +271,58 @@ img {
         width: 230px;
         width: 100%;
         height: 630px; }
-        .header .header-nav .nav .menus .tit {
+        .header .header-nav .nav .menus .gooddds {
+          display: none;
+          width: 870px;
+          height: 390px;
+          overflow: hidden;
           position: absolute;
-          top: -3px;
-          left: 0px;
-          width: 230px;
-          height: 52px;
-          background: #f92c86;
-          z-index: 1; }
-          .header .header-nav .nav .menus .tit h3 {
-            padding-left: 22px;
-            font-size: 16px;
-            line-height: 52px;
-            color: #fff; }
-        .header .header-nav .nav .menus .dlsone {
-          position: relative;
-          width: 230px;
-          height: 593px;
-          z-index: 1;
-          top: 3px;
-          left: 0; }
-          .header .header-nav .nav .menus .dlsone .goods {
-            width: 870px;
-            height: 390px;
-            position: absolute;
-            left: 230px;
-            top: -3px; }
-          .header .header-nav .nav .menus .dlsone .dd {
-            display: none;
+          left: 230px;
+          top: 45px;
+          z-index: 5; }
+          .header .header-nav .nav .menus .gooddds .dd {
             width: 870px;
             height: 390px;
             background: white;
             border: 1px solid #d1d1d1; }
-            .header .header-nav .nav .menus .dlsone .dd .columstotol {
+            .header .header-nav .nav .menus .gooddds .dd .brandsone {
+              float: right;
+              width: 258px;
+              height: 272px;
+              margin-right: 37px; }
+              .header .header-nav .nav .menus .gooddds .dd .brandsone h3 {
+                padding-bottom: 8px;
+                font-size: 14px;
+                color: #222;
+                display: block;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                font-weight: bold; }
+              .header .header-nav .nav .menus .gooddds .dd .brandsone .clearbrandsone {
+                width: 253px;
+                height: 243px; }
+                .header .header-nav .nav .menus .gooddds .dd .brandsone .clearbrandsone a {
+                  display: block;
+                  float: left;
+                  width: 84px;
+                  height: 84px;
+                  box-sizing: border-box;
+                  border: 1px solid #e5e5e5; }
+                  .header .header-nav .nav .menus .gooddds .dd .brandsone .clearbrandsone a img {
+                    display: block;
+                    width: 82px;
+                    height: 82px; }
+            .header .header-nav .nav .menus .gooddds .dd .columstotol {
               float: left;
               width: 530px;
               height: 360px; }
-              .header .header-nav .nav .menus .dlsone .dd .columstotol .columone {
+              .header .header-nav .nav .menus .gooddds .dd .columstotol .columone {
                 width: 230px;
                 float: left;
                 margin: 0 10px; }
-                .header .header-nav .nav .menus .dlsone .dd .columstotol .columone h3 {
+                .header .header-nav .nav .menus .gooddds .dd .columstotol .columone h3 {
                   padding-bottom: 8px;
                   font-size: 14px;
                   border-bottom: 1px solid #e5e5e5;
@@ -313,7 +333,7 @@ img {
                   -webkit-margin-start: 0px;
                   -webkit-margin-end: 0px;
                   font-weight: bold; }
-                .header .header-nav .nav .menus .dlsone .dd .columstotol .columone p {
+                .header .header-nav .nav .menus .gooddds .dd .columstotol .columone p {
                   width: 250px;
                   height: 48px;
                   display: block;
@@ -322,17 +342,47 @@ img {
                   -webkit-margin-start: 0px;
                   -webkit-margin-end: 0px;
                   margin-top: 10px; }
-                  .header .header-nav .nav .menus .dlsone .dd .columstotol .columone p a {
+                  .header .header-nav .nav .menus .gooddds .dd .columstotol .columone p a {
                     display: inline-block;
                     vertical-align: top;
                     margin-right: 10px;
                     line-height: 2;
                     font-size: 12px;
                     color: #666; }
-                    .header .header-nav .nav .menus .dlsone .dd .columstotol .columone p a:hover {
+                    .header .header-nav .nav .menus .gooddds .dd .columstotol .columone p a:hover {
                       color: #ff3893; }
-                  .header .header-nav .nav .menus .dlsone .dd .columstotol .columone p .hot {
+                  .header .header-nav .nav .menus .gooddds .dd .columstotol .columone p .hot {
                     color: #ff3893; }
+        .header .header-nav .nav .menus .tit {
+          position: absolute;
+          top: -3px;
+          left: 0px;
+          width: 230px;
+          height: 52px;
+          background: #f92c86;
+          z-index: 1; }
+          .header .header-nav .nav .menus .tit h3 {
+            position: relative;
+            padding-left: 22px;
+            font-size: 16px;
+            line-height: 52px;
+            color: #fff; }
+            .header .header-nav .nav .menus .tit h3:hover img {
+              transform: rotate(180deg);
+              transition: all 1s; }
+            .header .header-nav .nav .menus .tit h3 img {
+              position: absolute;
+              top: 18px;
+              right: 5px;
+              width: 28px;
+              height: 17px; }
+        .header .header-nav .nav .menus .dlsone {
+          position: relative;
+          width: 230px;
+          height: 593px;
+          z-index: 1;
+          top: 3px;
+          left: 0; }
           .header .header-nav .nav .menus .dlsone .dt {
             width: 230px;
             height: 70px;
@@ -387,35 +437,6 @@ img {
             z-index: 1; }
           .header .header-nav .nav .menus .dlsone .dtother {
             border: 1px solid #d1d1d1; }
-          .header .header-nav .nav .menus .dlsone .brandsone {
-            float: right;
-            width: 258px;
-            height: 272px;
-            margin-right: 37px; }
-            .header .header-nav .nav .menus .dlsone .brandsone h3 {
-              padding-bottom: 8px;
-              font-size: 14px;
-              color: #222;
-              display: block;
-              -webkit-margin-before: 1em;
-              -webkit-margin-after: 1em;
-              -webkit-margin-start: 0px;
-              -webkit-margin-end: 0px;
-              font-weight: bold; }
-            .header .header-nav .nav .menus .dlsone .brandsone .clearbrandsone {
-              width: 253px;
-              height: 243px; }
-              .header .header-nav .nav .menus .dlsone .brandsone .clearbrandsone a {
-                display: block;
-                float: left;
-                width: 84px;
-                height: 84px;
-                box-sizing: border-box;
-                border: 1px solid #e5e5e5; }
-                .header .header-nav .nav .menus .dlsone .brandsone .clearbrandsone a img {
-                  display: block;
-                  width: 82px;
-                  height: 82px; }
 
 /*second  part _four carouse */
 .tosplice {
